@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Colis - Transport Europe-Mali</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+                    <div className="bg-white p-8 rounded-lg shadow-md text-center">
+                        <h1 className="text-3xl font-bold text-blue-600 mb-2">📦 Mon Colis</h1>
+                        <p className="text-gray-700 font-medium text-lg">Transport Europe-Mali</p>
+                        <p className="text-sm text-gray-500 mt-4">En cours de développement...</p>
+                    </div>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+
+</body>
+</html>
